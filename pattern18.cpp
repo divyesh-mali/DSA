@@ -7,20 +7,19 @@ int main()
     cout << "Enter a number: ";
     cin >> n;
 
+
     int row=1; 
     while(row<=n)
     {
-        int col = 1;
-
-        while(col<=n)
+        int col=1;
+        while(col<=(n-row+1))
         {
-            char ch = 'A' + col - 1; 
-            cout << ch << " "; 
+            cout << "*" << " "; 
             col++;
         }
         cout << "\n";
         row++;
-    }    
 
+    }
     return 0;
 }

@@ -8,14 +8,15 @@ int main()
     cin >> n;
 
     int row=1; 
+    char start = 'A';
     while(row<=n)
     {
         int col = 1;
 
         while(col<=n)
         {
-            char ch = 'A' + col - 1; 
-            cout << ch << " "; 
+            cout << start << " "; 
+            start++; 
             col++;
         }
         cout << "\n";

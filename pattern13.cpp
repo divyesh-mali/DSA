@@ -12,9 +12,9 @@ int main()
     {
         int col = 1;
 
-        while(col<=n)
+        while(col<=row)
         {
-            char ch = 'A' + col - 1; 
+            char ch = 'A'+row-1;
             cout << ch << " "; 
             col++;
         }
